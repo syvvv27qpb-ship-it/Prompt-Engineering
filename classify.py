@@ -7,7 +7,7 @@ import time
 # ---------------------------
 # Settings
 # ---------------------------
-#API_KEY = "API Key"
+API_KEY = ""
 INPUT_CSV = "file_profiles.csv"
 OUTPUT_CSV = "classifications.csv"
 BATCH_SIZE = 100
@@ -71,7 +71,7 @@ The reasoning field should be 2-3 sentences maximum.
 # ---------------------------
 # Setup
 # ---------------------------
-#client = genai.Client(api_key=API_KEY)
+client = genai.Client(api_key=API_KEY)
 
 # ---------------------------
 # Load profiles
@@ -135,5 +135,5 @@ print(f"Done. {len(out)} classifications written to {OUTPUT_CSV}")
 
 ###########################################
 #NOTE:
-# Due to git policies API keys can not be neither commited nor uploaded, please remove "#" sign from lines 10 and 74 + make sure to paste the correct API key
+# make sure to paste the correct API key
 ###########################################
